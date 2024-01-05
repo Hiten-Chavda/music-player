@@ -1,0 +1,142 @@
+body{
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+   
+    display: flex;
+    top: 0;
+    border: 1px solid white;
+
+}
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    position: sticky;
+    width: 100vw;
+}
+li{
+    padding: 10px;
+}
+ul{
+    height:40px;
+    background-color: black;
+    color: rgb(246, 248, 246);
+}
+.brand img{
+    height: 25px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+nav li:hover{
+    cursor: pointer;
+    color: rgb(9, 248, 9);
+
+}
+.name{
+    padding-top:12px ;
+    color: rgb(13, 179, 13);
+    font-weight: bolder;
+
+}
+.container{
+    display: flex;
+    width: 70%;
+    min-height: 73vh;
+    margin: 23px auto;
+    padding:25px ;
+    padding: 3px;
+    border-radius: 12px;
+
+   
+    
+}
+h1{
+    color: white;
+    
+}
+
+.songlist{
+    width: 74%;
+    border-radius: 12px;
+    color: black;
+    display: flex;
+    height: 70vh;
+    background-color: none;
+    background-image:url("Spotify Clone/bg.jpg");
+    background-color: white;
+    border: 2px solid white;
+}
+.bottom{
+    position: sticky;
+    display: flex;
+    height: 70px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    border: 2px solid whitesmoke;
+    bottom: 0;
+    border: 1px solid white;
+
+}
+.layout{
+    margin-top: 15px;
+    overflow: scroll;
+
+}
+::-webkit-scrollbar{
+    visibility: hidden;
+}
+.songitem{
+    height: 50px;
+    display: flex;
+
+    width: 80%;
+    color: rgb(28, 243, 12);
+    margin: 20px 0;
+    margin-right:20px ;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 222px;
+    height: 30px;
+    background-color: #000;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 14px;
+    padding-right: 41px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.songitem img{
+    width: 23px;
+}
+
+#myProgressBar{
+    width: 60vw;
+    cursor: pointer;
+}
+.icons i{
+    margin-top: 10px;
+    height: 15px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.songinfo{
+    position: absolute;
+    left: 0;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+span{
+    margin: 10px;
+} 
